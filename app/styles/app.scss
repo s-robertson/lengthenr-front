@@ -1,0 +1,52 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+@import '_form.scss';
+
+body {
+  height: 100%;
+  background: #912c10 url(/assets/images/bg.jpg) 50% 0 no-repeat;
+  color: $text-primary;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+#logo {
+  text-align: center;
+
+  > span {
+    display: block;
+  }
+
+  .primary {
+    @include text-enhance-a-rizer();
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-size: 3em;
+    text-shadow: 0px 2px 0px rgba(77, 12, 0, 1);
+  }
+
+  .secondary {
+    font-family: $font-secondary;
+    font-size: 2em;
+    color: #ff9900;
+    text-shadow: 0px 5px 0px rgba(188, 80, 0, 1);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#main {
+  text-align: center;
+}
+
+.sr-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

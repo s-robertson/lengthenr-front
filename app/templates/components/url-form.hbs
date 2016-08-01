@@ -1,9 +1,9 @@
 <div id="lengthen-url-form-container">
     <form {{action "onSubmit" on="submit"}}>
-        {{input class="input-url" value=originalUrl type="text"}}
-        <button type="submit">Lengthen</button>
+        <label for="url" class="sr-only">Enter a URL</label>
+        {{input name="url" size="200" placeholder="Enter a URL..." class="input-url" value=originalUrl type="text"}}
+        <button class="btn" type="submit">Lengthen!</button>
     </form>
-  {{url.original}}
   {{#if url.longCode}}
     <div id="lengthened-result">
         <h4>Here's your sweet new URL</h4>
