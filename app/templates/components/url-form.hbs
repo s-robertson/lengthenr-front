@@ -1,17 +1,17 @@
 <div id="lengthen-url-form-container">
-    <div class="form">
-        <form {{action "onSubmit" on="submit"}}>
-            <label for="url" class="sr-only">Enter a URL</label>
-          {{input name="url" size="200" placeholder="Enter a URL..." class="input-url" value=originalUrl type="text"}}
-            <button class="btn" type="submit">Lengthen!</button>
-        </form>
-    </div>
+  <div class="form">
+    <form {{action "onSubmit" on="submit"}}>
+      <label for="url" class="sr-only">Enter a URL</label>
+      {{input name="url" size="200" placeholder="Enter a URL..." class="input-url" value=originalUrl type="text"}}
+      <button class="btn" type="submit">Lengthen!</button>
+    </form>
+  </div>
   {{#if url.longCode}}
-      <div id="lengthened-result">
-          <h4>He<span class="oomf">r</span>e's you<span class="oomf">r</span> sweet new U<span class="oomf">R</span>L</h4>
-          <div class="lengthened-url">
-            {{url.longCode}}
-          </div>
+    <div id="lengthened-result">
+      <h4>He<span class="oomf">r</span>e's you<span class="oomf">r</span> sweet new U<span class="oomf">R</span>L</h4>
+      <div class="lengthened-url">
+        {{url.longCode}}
       </div>
+    </div>
   {{/if}}
 </div>

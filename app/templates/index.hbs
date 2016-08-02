@@ -1,14 +1,17 @@
-<header class="container">
-  <h1 id="logo" role="banner">
+<div class="site-wrapper">
+  <header class="container">
+    <h1 id="logo" role="banner">
       <span class="secondary">Uniform Resource Locator</span>
       <span class="primary">Lengthen<span class="oomf">r</span></span>
-  </h1>
-</header>
+    </h1>
+    <h2>Now with 100% more awesomeness and responsiveness</h2>
+  </header>
 
-<div id="main" role="main">
-  {{url-form url=model onSubmit=(action "lengthenUrl")}}
-</div>
+  <div id="main" role="main">
+    {{url-form url=model onSubmit=(action "lengthenUrl")}}
+  </div>
 
-<footer>
+  <footer>
     Is this serious? No, not really. Use it anyway!
-</footer>
+  </footer>
+</div>
