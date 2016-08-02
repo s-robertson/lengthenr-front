@@ -17,6 +17,7 @@ test('should display a lengthened url', function(assert) {
     id: 1,
     original: 'http://www.google.ca',
     longCode: '13981390ads90das098das890131231321312',
+    longUrl: 'http://www.placeholder.com/r/de5db96b8c78294bcb5eb02025d9ea1835e25bdc75d72b4c039169e94890ca11'
   });
 
   this.set('externalAction', (actual) => {
