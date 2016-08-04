@@ -11,7 +11,7 @@ export default DS.Model.extend({
     let lengthened;
 
     if (lengthened = this.get('lengthened')) {
-      return `http://${window.location.hostname}/r/${this.get('lengthened')}`;
+      return `https://${window.location.hostname}/r/${this.get('lengthened')}`;
     }
     else {
       return false;
